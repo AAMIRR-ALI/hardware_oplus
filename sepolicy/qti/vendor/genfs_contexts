@@ -80,6 +80,41 @@ genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-5/5-005a/leds/vibrator    u:
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-6/6-005a/leds/vibrator    u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-7/7-005a/leds/vibrator    u:object_r:sysfs_vibrator:s0
 
+# Health
+genfscon sysfs /class/power_supply/battery/capacity                                                 u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0051/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply/charge_pump_master            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0035/884000.i2c:qcom,smb1396@35:qcom,div2_cp_slave/power_supply/cp_slave                u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply/bms                       u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/verify_digest                          u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0065/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-slave             u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-006b/power_supply/bbc                       u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-5/5-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-6/6-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-6/6-0065/power_supply/bq2597x-master            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-6/6-0066/power_supply/bq2597x-slave             u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-4/4-0055/power_supply/bms                       u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-4/4-0055/verify_digest                          u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-003b/power_supply/idt                       u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi                  u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0061/power_supply/rx1619                    u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-6/6-002a/power_supply/cp_wdog                   u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0051/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-0066/power_supply/bq2597x-standalone        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/980000.i2c/i2c-0/0-0055/power_supply/bms_slave                 u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a80000.i2c/i2c-3/3-0041/power_supply/fuda                      u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0051/power_supply/bq2597x-slave             u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-slave             u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-5/5-0055/power_supply/bms_master                u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless    u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/c80000.i2c/i2c-4/4-003b/power_supply/idt                       u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup[0-101][0-101]                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup[0-101][0-101]/event_count                     u:object_r:sysfs_wakeup:s0
+
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/0306_02.01.00/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/171c0000.slim/tavil-slim-pgd/wakeup u:object_r:sysfs_wakeup:s0
@@ -157,3 +192,13 @@ genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/wakeup u:object
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/vendor/vendor:motor_pl/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/active_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/active_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/event_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/expire_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/last_change_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/max_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/name u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/prevent_suspend_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/total_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/wakeup_count u:object_r:sysfs_wakeup:s0
