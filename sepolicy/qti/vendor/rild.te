@@ -9,7 +9,6 @@ set_prop(rild, vendor_nw_exported_system_prop)
 allow rild cache_file:dir { add_name create getattr search write };
 allow rild system_data_root_file:dir { add_name write };
 get_prop(rild, default_prop)
-allow rild system_data_root_file:file { add_name create open write };
 allow rild cache_file:file { add_name create getattr search write };
 allow rild ctl_rildaemon_prop:file { getattr map open };
 
