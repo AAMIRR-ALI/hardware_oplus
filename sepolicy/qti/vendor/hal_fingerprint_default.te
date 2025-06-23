@@ -31,3 +31,7 @@ get_prop(hal_fingerprint_default, system_oplus_project_prop)
 get_prop(hal_fingerprint_default, vendor_radio_prop)
 set_prop(hal_fingerprint_default, system_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+#============= hal_fingerprint_default ==============
+get_prop(hal_fingerprint_default, default_prop)
+allow hal_fingerprint_default proc:file { open read };

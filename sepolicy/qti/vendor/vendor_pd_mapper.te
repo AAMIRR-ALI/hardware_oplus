@@ -1,0 +1,2 @@
+#============= vendor_pd_mapper ==============
+get_prop(vendor_pd_mapper, system_prop)

@@ -1,1 +1,10 @@
 allow init vendor_sysfs_usb_supply:file w_file_perms;
+#============= init ==============
+allow init cgroup:file getattr;
+allow init device:file { create open write };
+allow init sysfs:file { open setattr write };
+allow init proc:file associate;
+allow init proc:filesystem associate;
+set_prop(init, vendor_default_prop)
+allow init init:unix_stream_socket connectto;
+

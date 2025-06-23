@@ -5,3 +5,10 @@ r_dir_file(vendor_mdm_helper, vendor_proc_engineer)
 r_dir_file(vendor_mdm_helper, vendor_proc_oplus_version)
 
 set_prop(vendor_mdm_helper, vendor_modem_prop)
+#============= vendor_mdm_helper ==============
+allow vendor_mdm_helper block_device:blk_file { open read };
+allow vendor_mdm_helper mnt_vendor_file:dir search;
+get_prop(vendor_mdm_helper, default_prop)
+get_prop(vendor_mdm_helper, system_prop)
+get_prop(vendor_mdm_helper, vendor_audio_debug_prop)
+get_prop(vendor_mdm_helper, vendor_radio_prop)

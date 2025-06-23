@@ -3,3 +3,7 @@ allow vendor_init vendor_proc_display:file w_file_perms;
 
 set_prop(vendor_init, system_oplus_project_prop)
 set_prop(vendor_init, vendor_oplus_touch_prop)
+#============= vendor_init ==============
+allow vendor_init cgroup:file getattr;
+allow vendor_init device:file { create write };
+
